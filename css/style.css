@@ -1,0 +1,612 @@
+/****** General ***********/
+
+* {
+    font-family: "Raleway", sans-serif;
+    /* je retire les marges par défaut  */
+    margin: 0;
+    padding: 0;
+    /*  */
+    box-sizing: content-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+}
+
+.doublefront .fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    flex-grow: 1 0 auto;
+}
+
+
+/* ici est la partie de mon HEADER */
+
+header {
+    /* je veux que dans mon header tout soit flexible aligné */
+    display: flex;
+    /* j'impose un row dans mon header */
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 0px;
+    box-sizing: border-box;
+    flex-grow: 1 0 auto;
+}
+
+header .navbar {
+    /* j'impose ma largeur je veux qu'il prend toute la largeur */
+    width: 100%;
+    /* j'aligne mes element */
+    display: flex;
+    /* pour ecarte mes elements */
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 80px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.navbar .nav-liens ul {
+    /* j'aligne ma liste ul li */
+    display: flex;
+}
+
+header .navbar .nav-liens ul li {
+    /* j'ajoute une marge entre eux 0 en haut et en bas mais 10 sur les cotés */
+    margin: 0px 30px;
+    padding-top: 10px;
+}
+
+header .navbar .nav-liens ul .heberg:hover {
+    border-top: #0065fc solid 2px;
+}
+
+header .navbar .nav-liens ul .activ:hover {
+    border-top: #0065fc solid 2px;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+    color: #0065fc;
+}
+
+.xfront {
+    margin-top: 5px;
+}
+
+
+/* je fais une modification  de ma div barsearch qui comporte le logo et la barre de recherche */
+
+form {
+    /* j'aligne mes éléments */
+    display: grid;
+    /* je mets un espace extérieur */
+    grid-template-columns: 60px 210px 140px;
+    margin: 20px 0;
+    height: 45px;
+}
+
+button {
+    border: none;
+}
+
+.barsearch {
+    background-color: #d9d9d9;
+    border-radius: 10px 0px 0px 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0;
+}
+
+.barsearch input {
+    /* border-right: none;
+    border-left: none;*/
+    border: none;
+}
+
+form .fa-solid {
+    padding: 13px;
+}
+
+
+/* ensuite je modifie mon bouton */
+
+.recherche {
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065fc;
+    color: white;
+    border: none;
+    padding: 11px;
+}
+
+.located {
+    border-radius: 15px 0px 0px 15px;
+    font-size: large;
+    position: relative;
+    left: 10px;
+    color: black;
+}
+
+
+/* ensuite je m'attaque à la barre */
+
+.barsearch input {
+    /* je modifie la largeur et la hauteur  */
+    height: 100%;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.fa-magnifying-glass {
+    display: none;
+}
+
+
+/* apres quelque recherche j'ai pu changé de couleur de mon input placeholder */
+
+input::placeholder {
+    color: black;
+}
+
+
+/* je m'attaque à la partie list ul li */
+
+.doublefront {
+    /* un display pour mon conteneur  */
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.doublefront .xglobe {
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+}
+
+
+/* ensuite une modification a l'interieur de mon conteneur de ma list ul li */
+
+.xdoublefront {
+    display: flex;
+    font-weight: 700;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    gap: 10px;
+}
+
+.xdoublefront li {
+    padding: 10px;
+    padding: 5px;
+}
+
+.xglobe .fa-solid {
+    padding-right: 10px;
+}
+
+.heart:hover {
+    background-color: #deebff;
+}
+
+.fire:hover {
+    background-color: #deebff;
+}
+
+.man:hover {
+    background-color: #deebff;
+}
+
+.money:hover {
+    background-color: #deebff;
+}
+
+
+/* je m'attaque petit au logo */
+
+.info {
+    border-radius: 55%;
+    box-shadow: 0 0 3px gray;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.mini-infos {
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+}
+
+.numbers {
+    flex-direction: row;
+}
+
+
+/* Propriétés des cartes*/
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: #f2f2f2;
+}
+
+
+/****** Hebergements And Populaires ***********/
+
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+
+/****** Hebergements ***********/
+
+.hebergements {
+    width: 62%;
+}
+
+.picture {
+    width: 100%;
+    height: 124px;
+}
+
+.hebergements-title {
+    display: flex;
+}
+
+.hebergements-cards .card {
+    width: 27%;
+    border: 2px solid green;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.affiche {
+    margin: 30px 30px 0px 0px;
+    text-align: right;
+}
+
+.hebergements .card img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+/****** Populaires ***********/
+
+.populaires {
+    width: 32%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+    border: 2px solid burlywood
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 2px solid var(--main-color);
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    border: 2px solid violet;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+    border: 2px solid black;
+}
+
+.populaires-cards .card-rating {
+    margin-bottom: 5px;
+    border: 2px solid orange;
+}
+
+
+/* Hébergements à Marseille */
+
+.xconteneur {
+    /* je fais un display pour que mes elements soient alignés */
+    display: flex;
+    /* pur qu'il soit aligné dans mon conteneur */
+    justify-content: space-between;
+    /* un wrap pour les mettres en colonnes lors du replit */
+    flex-wrap: wrap;
+    /* pour etre bien centré */
+    margin: 0 auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/* ACTIVITES A MARSEILLE */
+
+.conteneur {
+    /* je mets mes elements aligné avec flex */
+    display: flex;
+    /* je dis a mes conteneur d'etre au centre */
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.conteneur .carte h3 {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.carte {
+    /* je mets un fond de couleur dans ma div carte qui va englobe l'image */
+    background-color: white;
+    /* je vais imposer une largeur ainsi qu'une hauteur */
+    width: 22%;
+    height: 439px;
+    /* je vais mettre de l'espace entre mes cartes */
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+}
+
+.carte-image {
+    height: 439px;
+}
+
+.conteneur img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activités h1 {
+    margin-left: 20px;
+}
+
+
+/*  FOOTER */
+
+footer {
+    /* je mets un fond de couleur dans mon footer */
+    background-color: #f2f2f2;
+    /* je veux qu'il prenne tout la largeur de ma page */
+    width: 100%;
+    /* pas forcement besoin mais pour un reset du footer */
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-top: 65px;
+}
+
+.footer-contenu {
+    /* je dis a mon conteneur de faire 1440px MAX de largeur */
+    max-width: 1440px;
+    /* pour que mes element soit centré */
+    margin: 0 auto;
+    /* mon copain flex pour aligné mes elements et soit mobile */
+    display: flex;
+    /* pour aligné mes mots en haut */
+    align-items: flex-start;
+}
+
+.footer-contenu h4 {
+    /* je mets un ecart en dessous de mes titres */
+    padding-bottom: 10px;
+}
+
+.footer-contenu ul {
+    /* j'enleve mes points sur mes liste */
+    list-style-type: none;
+}
+
+.footer-contenu ul li {
+    /* je mets un ecart entre mes liste en haut en bas mais pas a gaucher ni a droite  */
+    padding: 10px 0px;
+}
+
+.bloc-contenu {
+    /* je dis a mes bloc de prend % du footer */
+    width: 100%;
+    padding: 30px;
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+
+/****** Media queries ***********/
+
+
+/* Medium devices (tablets, less/equal than 1024px) */
+
+
+/* responsive Medium*/
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+    .hebergements {
+        width: 100%;
+    }
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .populaires-cards .card {
+        width: 30%;
+    }
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    .carte {
+        height: 270px;
+    }
+    .conteneur img {
+        height: 200px;
+    }
+    .conteneur .carte h3 {
+        padding-top: 16px;
+    }
+}
+
+
+/*Responsive tablettes*/
+
+@media screen and (min-width:376px) and (max-width: 768px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+    .hebergements {
+        width: 100%;
+    }
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .populaires-cards .card {
+        width: 30%;
+    }
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+    .carte {
+        height: 270px;
+    }
+    .conteneur img {
+        height: 200px;
+    }
+    .conteneur .carte h3 {
+        padding-top: 16px;
+    }
+}
+
+
+/* Responsive Mobile*/
+
+@media screen and (min-width:270px) and (max-width:375px) {
+    /* for mobile phones */
+    header .navbar {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    header .navbar .nav-liens ul {
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    header .navbar .nav-liens ul .heberg:hover {
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+    header .navbar .nav-liens ul .activ:hover {
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+    .titrefront {
+        margin: 20px;
+    }
+    .xfront {
+        margin-left: 30px;
+    }
+    .barsearch {
+        margin-left: 0;
+    }
+    .xconteneur {
+        flex-direction: column;
+    }
+    .card {
+        display: grid;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
