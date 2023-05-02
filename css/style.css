@@ -28,7 +28,6 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
     flex-grow: 1 0 auto;
@@ -43,7 +42,7 @@ header {
     /* j'impose un row dans mon header */
     flex-direction: row;
     width: 100%;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     padding: 0 0px;
     box-sizing: border-box;
     flex-grow: 1 0 auto;
@@ -494,7 +493,7 @@ footer {
 
 /* responsive Medium*/
 
-@media screen and (min-width:769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -533,7 +532,7 @@ footer {
 
 /*Responsive tablettes*/
 
-@media screen and (min-width:376px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -572,8 +571,11 @@ footer {
 
 /* Responsive Mobile*/
 
-@media screen and (min-width:270px) and (max-width:375px) {
+@media screen and (max-width:375px) {
     /* for mobile phones */
+    .main-container {
+        padding: 10px;
+    }
     header .navbar {
         flex-direction: column;
         text-align: center;
@@ -608,5 +610,11 @@ footer {
         display: grid;
         margin-bottom: 10px;
         width: 100%;
+    }
+    .footer-contenu {
+        flex-direction: column;
+    }
+    .bloc-contenu {
+        padding: 0;
     }
 }
