@@ -597,6 +597,14 @@ footer {
         border-bottom: 2px solid #0065fc;
         border-top: none;
     }
+    form {
+        /* j'aligne mes éléments */
+        display: grid;
+        /* je mets un espace extérieur */
+        grid-template-columns: 20% 50% 30%;
+        margin: 20px 0;
+        height: 45px;
+    }
     .hebergements {
         width: 100%;
     }
@@ -611,6 +619,12 @@ footer {
     }
     .barsearch {
         margin-left: 0;
+    }
+    .fa-magnifying-glass {
+        display: block;
+    }
+    .recherche span {
+        display: none;
     }
     .xconteneur {
         flex-direction: column;
@@ -637,5 +651,6 @@ footer {
     .conteneur {
         flex-direction: column;
         width: 100%;
+        gap: 15px;
     }
 }
