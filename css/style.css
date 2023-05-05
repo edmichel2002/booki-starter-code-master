@@ -615,7 +615,6 @@ footer {
     .card {
         display: grid;
         margin-bottom: 10px;
-        width: 100%;
     }
     .footer-contenu {
         flex-direction: column;
