@@ -625,6 +625,9 @@ footer {
     .populaires-cards .card {
         width: 100%;
     }
+    .carte {
+        width: 95%;
+    }
     .footer-contenu {
         flex-direction: column;
     }
@@ -634,8 +637,5 @@ footer {
     .conteneur {
         flex-direction: column;
         width: 100%;
-    }
-    .carte {
-        width: 95%;
     }
 }
