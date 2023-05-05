@@ -644,6 +644,7 @@ footer {
     }
     .footer-contenu {
         flex-direction: column;
+        gap: 15px;
     }
     .bloc-contenu {
         padding: 0;
