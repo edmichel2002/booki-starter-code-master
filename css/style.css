@@ -566,6 +566,9 @@ footer {
     .conteneur .carte h3 {
         padding-top: 16px;
     }
+    .hebergements-cards .card {
+        width: 100%;
+    }
 }
 
 
