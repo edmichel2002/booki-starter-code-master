@@ -619,6 +619,12 @@ footer {
         display: grid;
         margin-bottom: 10px;
     }
+    .populaires-cards {
+        flex-direction: column;
+    }
+    .populaires-cards .card {
+        width: 100%;
+    }
     .footer-contenu {
         flex-direction: column;
     }
