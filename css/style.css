@@ -2,11 +2,9 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    /* je retire les marges par défaut  */
     margin: 0;
     padding: 0;
-    /*  */
-    box-sizing: content-box;
+    box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
 }
@@ -29,7 +27,6 @@ body {
 .main-container {
     width: 100%;
     padding: 0 50px;
-    box-sizing: border-box;
     flex-grow: 1 0 auto;
 }
 
@@ -37,25 +34,16 @@ body {
 /* ici est la partie de mon HEADER */
 
 header {
-    /* je veux que dans mon header tout soit flexible aligné */
     display: flex;
-    /* j'impose un row dans mon header */
     flex-direction: row;
     width: 100%;
-    /* max-width: 1440px; */
     padding: 0 0px;
-    box-sizing: border-box;
-    flex-grow: 1 0 auto;
 }
 
 header .navbar {
-    /* j'impose ma largeur je veux qu'il prend toute la largeur */
     width: 100%;
-    /* j'aligne mes element */
     display: flex;
-    /* pour ecarte mes elements */
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 header img {
@@ -65,12 +53,10 @@ header img {
 }
 
 .navbar .nav-liens ul {
-    /* j'aligne ma liste ul li */
     display: flex;
 }
 
 header .navbar .nav-liens ul li {
-    /* j'ajoute une marge entre eux 0 en haut et en bas mais 10 sur les cotés */
     margin: 0px 30px;
     padding-top: 10px;
 }
@@ -95,13 +81,8 @@ header a:hover {
     margin-top: 5px;
 }
 
-
-/* je fais une modification  de ma div barsearch qui comporte le logo et la barre de recherche */
-
 form {
-    /* j'aligne mes éléments */
     display: grid;
-    /* je mets un espace extérieur */
     grid-template-columns: 60px 210px 140px;
     margin: 20px 0;
     height: 45px;
@@ -120,17 +101,12 @@ button {
 }
 
 .barsearch input {
-    /* border-right: none;
-    border-left: none;*/
     border: none;
 }
 
 form .fa-solid {
     padding: 13px;
 }
-
-
-/* ensuite je modifie mon bouton */
 
 .recherche {
     border-radius: 0px 10px 10px 0px;
@@ -152,7 +128,6 @@ form .fa-solid {
 /* ensuite je m'attaque à la barre */
 
 .barsearch input {
-    /* je modifie la largeur et la hauteur  */
     height: 100%;
     font-weight: 700;
     text-align: center;
@@ -162,9 +137,6 @@ form .fa-solid {
 .fa-magnifying-glass {
     display: none;
 }
-
-
-/* apres quelque recherche j'ai pu changé de couleur de mon input placeholder */
 
 input::placeholder {
     color: black;
@@ -284,8 +256,6 @@ input::placeholder {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 20px;
-    box-sizing: border-box;
-    border: 2px solid red;
 }
 
 
@@ -306,7 +276,6 @@ input::placeholder {
 
 .hebergements-cards .card {
     width: 27%;
-    border: 2px solid green;
 }
 
 .card img {
@@ -339,7 +308,6 @@ input::placeholder {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    border: 2px solid burlywood
 }
 
 .populaires-cards img {
@@ -355,24 +323,20 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
     border: 2px solid var(--main-color);
 }
 
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-    border: 2px solid violet;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
-    border: 2px solid black;
 }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
-    border: 2px solid orange;
 }
 
 
@@ -574,7 +538,7 @@ footer {
 
 /* Responsive Mobile*/
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:375px) and (min-width: 320px) {
     /* for mobile phones */
     .main-container {
         padding: 10px;
@@ -604,10 +568,12 @@ footer {
         border-bottom: 2px solid;
         border-bottom-color: #f2f2f2;
     }
+    .xglobe {
+        display: flex;
+        flex-wrap: wrap;
+    }
     form {
-        /* j'aligne mes éléments */
         display: grid;
-        /* je mets un espace extérieur */
         grid-template-columns: 20% 50% 30%;
         margin: 20px 0;
         height: 45px;
@@ -660,5 +626,9 @@ footer {
         flex-direction: column;
         width: 100%;
         gap: 15px;
+    }
+    .affiche {
+        text-align: start;
+        margin-top: 0;
     }
 }
