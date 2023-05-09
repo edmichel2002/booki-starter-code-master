@@ -27,7 +27,6 @@ body {
 .main-container {
     width: 100%;
     padding: 0 50px;
-    flex-grow: 1 0 auto;
 }
 
 
@@ -456,6 +455,12 @@ footer {
     padding: 30px;
 }
 
+.titre-chapeau {
+    display: flex;
+    font-weight: 600;
+    gap: 10px;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -469,6 +474,9 @@ footer {
 /*Responsive tablettes*/
 
 @media (max-width: 1024px) {
+    span {
+        font-weight: 600;
+    }
     .hebergements-and-populaires {
         flex-direction: column;
     }
