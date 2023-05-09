@@ -364,7 +364,6 @@ input::placeholder {
     margin: 0 auto;
     gap: 10px;
     margin-top: 20px;
-    box-sizing: border-box;
     width: 100%;
 }
 
