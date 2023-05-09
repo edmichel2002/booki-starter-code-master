@@ -618,6 +618,7 @@ footer {
         font-weight: 600;
         margin-left: 10px;
         margin-top: 20px;
+        align-self: baseline;
     }
     .fa-star {
         color: #0065fc;
