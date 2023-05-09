@@ -537,7 +537,7 @@ footer {
         display: grid;
         grid-template-columns: 20% 50% 30%;
         margin: 20px 0;
-        height: 45px;
+        margin-bottom: 45px;
     }
     .hebergements {
         width: 100%;
