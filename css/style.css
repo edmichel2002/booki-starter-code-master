@@ -552,6 +552,9 @@ footer {
         margin: 20px 0;
         margin-bottom: 45px;
     }
+    .filtres {
+        flex-direction: column;
+    }
     .hebergements {
         width: 100%;
     }
@@ -631,5 +634,9 @@ footer {
     }
     .section-title {
         font-size: large;
+    }
+    .hebergements-cards .card {
+        width: 100%;
+        gap: 10px;
     }
 }
