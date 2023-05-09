@@ -169,7 +169,6 @@ input::placeholder {
 }
 
 .xdoublefront li {
-    padding: 10px;
     padding: 5px;
 }
 
@@ -608,6 +607,9 @@ footer {
     }
     .neutral-star {
         color: #f2f2f2;
+    }
+    li.xglobe.man {
+        width: 124px;
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
