@@ -350,6 +350,7 @@ input::placeholder {
     flex-wrap: wrap;
     /* pour etre bien centré */
     margin: 0 auto;
+    gap: 10px;
     margin-top: 20px;
     box-sizing: border-box;
     width: 100%;
