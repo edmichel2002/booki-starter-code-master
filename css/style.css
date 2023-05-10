@@ -333,7 +333,6 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid var(--main-color);
 }
 
 .populaires-cards .card-title {
@@ -473,9 +472,13 @@ footer {
 
 /*Responsive tablettes*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     span {
         font-weight: 600;
+    }
+    .filtres {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .hebergements-and-populaires {
         flex-direction: column;
@@ -646,5 +649,8 @@ footer {
     .hebergements-cards .card {
         width: 100%;
         gap: 10px;
+    }
+    .info.fa-solid.fa-info {
+        width: 30px;
     }
 }
