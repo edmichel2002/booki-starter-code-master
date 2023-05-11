@@ -514,7 +514,7 @@ footer {
     .carte {
         height: 270px;
     }
-    .conteneur img {
+    .card-image {
         height: 200px;
     }
     .conteneur .carte h3 {
