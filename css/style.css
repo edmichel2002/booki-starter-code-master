@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    max-width: 1440px;
 }
 
 :root {
@@ -19,12 +20,17 @@
     color: var(--main-color);
 }
 
+html {
+    margin: 0 auto;
+}
+
 body {
     display: flex;
     justify-content: center;
 }
 
 .main-container {
+    max-width: 1440px;
     width: 100%;
     padding: 0 50px;
 }
@@ -77,7 +83,7 @@ header a:hover {
 }
 
 .place {
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 form {
@@ -97,7 +103,7 @@ button {
     border-radius: 10px 0px 0px 10px;
     padding-bottom: 1px;
     padding-top: 1px;
-    margin: 0;
+    margin-left: -14px;
 }
 
 .barsearch input {
@@ -120,7 +126,6 @@ form .fa-solid {
     border-radius: 15px 0px 0px 15px;
     font-size: large;
     position: relative;
-    left: 10px;
     color: black;
 }
 
@@ -289,7 +294,19 @@ span {
 }
 
 .hebergements-cards .card {
-    width: 27%;
+    width: 30%;
+}
+
+.hebergements.card-content {
+    padding: 10px 0 10px 10px;
+}
+
+.hebergements.card-title {
+    margin-bottom: 6px;
+}
+
+.hebergements.card-subtitle {
+    margin-bottom: 6px;
 }
 
 .card img {
@@ -383,7 +400,7 @@ span {
     margin: 20px;
 }
 
-.container .card-activities h3 {
+.card-activities h3 {
     margin-left: 20px;
     font-size: 16px;
 }
@@ -396,7 +413,7 @@ span {
     height: 439px;
     /* je vais mettre de l'espace entre mes cartes */
     border-radius: 20px;
-    box-shadow: 0px 0px 10px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card-image {
@@ -404,7 +421,7 @@ span {
 }
 
 .container .card-image {
-    height: 90%;
+    height: 88%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -426,33 +443,25 @@ footer {
 }
 
 .footer-container {
-    /* je dis a mon conteneur de faire 1440px MAX de largeur */
-    max-width: 1440px;
-    /* pour que mes element soit centré */
+    /* max-width: 1440px;*/
     margin: 0 auto;
-    /* mon copain flex pour aligné mes elements et soit mobile */
     display: flex;
-    /* pour aligné mes mots en haut */
     align-items: flex-start;
 }
 
 .footer-container h4 {
-    /* je mets un ecart en dessous de mes titres */
     padding-bottom: 10px;
 }
 
 .footer-container ul {
-    /* j'enleve mes points sur mes liste */
     list-style-type: none;
 }
 
 .footer-container ul li {
-    /* je mets un ecart entre mes liste en haut en bas mais pas a gaucher ni a droite  */
     padding: 10px 0px;
 }
 
 .block-content {
-    /* je dis a mes bloc de prend % du footer */
     width: 100%;
     padding: 30px;
 }
@@ -528,7 +537,7 @@ footer {
 @media (max-width: 767.98px) {
     /* for mobile phones */
     .main-container {
-        padding: 10px;
+        padding: 10px 0;
     }
     header .navbar {
         flex-direction: column;
@@ -568,6 +577,9 @@ footer {
     .filters {
         flex-direction: column;
     }
+    .hebergements-and-populaires section {
+        background: transparent;
+    }
     .hebergements {
         width: 100%;
     }
@@ -601,6 +613,9 @@ footer {
         display: grid;
         margin-bottom: 10px;
     }
+    .populaires {
+        border-radius: 0;
+    }
     .populaires-cards {
         flex-direction: column;
     }
@@ -614,6 +629,7 @@ footer {
         flex-direction: column;
         gap: 15px;
         margin-left: 15px;
+        padding-top: 20px;
     }
     .block-content {
         padding: 0;
@@ -622,6 +638,8 @@ footer {
         flex-direction: column;
         width: 100%;
         gap: 15px;
+        margin: 0;
+        align-items: center;
     }
     .message {
         text-align: start;
@@ -655,5 +673,30 @@ footer {
     }
     .info.fa-solid.fa-info {
         width: 30px;
+    }
+    .card-activities {
+        margin-top: 30px;
+        width: 85%;
+        height: 200px;
+    }
+    .container .card-image {
+        height: 140px;
+    }
+    .card-activities h3 {
+        padding-top: 15px;
+    }
+    .section-title {
+        margin-left: 20px;
+    }
+    p.card-subtitle {
+        margin-bottom: 6px;
+        margin-left: 15px;
+    }
+    .hebergements h3.card-title {
+        margin-left: 15px;
+        margin-bottom: 6px;
+    }
+    .hebergements .card-rating {
+        margin-left: 15px;
     }
 }
