@@ -425,7 +425,7 @@ footer {
     margin-top: 65px;
 }
 
-.footer-contenu {
+.footer-container {
     /* je dis a mon conteneur de faire 1440px MAX de largeur */
     max-width: 1440px;
     /* pour que mes element soit centré */
@@ -436,28 +436,28 @@ footer {
     align-items: flex-start;
 }
 
-.footer-contenu h4 {
+.footer-container h4 {
     /* je mets un ecart en dessous de mes titres */
     padding-bottom: 10px;
 }
 
-.footer-contenu ul {
+.footer-container ul {
     /* j'enleve mes points sur mes liste */
     list-style-type: none;
 }
 
-.footer-contenu ul li {
+.footer-container ul li {
     /* je mets un ecart entre mes liste en haut en bas mais pas a gaucher ni a droite  */
     padding: 10px 0px;
 }
 
-.bloc-contenu {
+.block-content {
     /* je dis a mes bloc de prend % du footer */
     width: 100%;
     padding: 30px;
 }
 
-.titre-chapeau {
+.first-word {
     display: flex;
     font-weight: 600;
     gap: 10px;
