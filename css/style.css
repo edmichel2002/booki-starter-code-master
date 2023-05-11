@@ -15,7 +15,7 @@
     --filter-bg-color: #deebff;
 }
 
-.doublefront .fa-solid {
+.elements .fa-solid {
     color: var(--main-color);
 }
 
@@ -145,14 +145,14 @@ input::placeholder {
 
 /* je m'attaque à la partie list ul li */
 
-.doublefront {
+.elements {
     /* un display pour mon conteneur  */
     /*display: flex;*/
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.doublefront .xglobe {
+.elements .xglobe {
     border: 1px solid #d9d9d9;
     border-radius: 20px;
 }
