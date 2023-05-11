@@ -311,6 +311,9 @@ span {
 
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .populaires-title {
