@@ -411,10 +411,6 @@ span {
     border-top-right-radius: 20px;
 }
 
-.activités h1 {
-    margin-left: 20px;
-}
-
 
 /*  FOOTER */
 
@@ -514,10 +510,10 @@ footer {
     .carte {
         height: 270px;
     }
-    .conteneur img {
+    .container.card-image {
         height: 200px;
     }
-    .conteneur .carte h3 {
+    .container.card-imageh3 {
         padding-top: 16px;
     }
     .hebergements-cards .card {
@@ -611,7 +607,7 @@ footer {
     .populaires-cards .card {
         width: 100%;
     }
-    .carte {
+    .card-activities {
         width: 95%;
     }
     .footer-contenu {
@@ -622,7 +618,7 @@ footer {
     .bloc-contenu {
         padding: 0;
     }
-    .conteneur {
+    .container {
         flex-direction: column;
         width: 100%;
         gap: 15px;
