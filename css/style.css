@@ -76,7 +76,7 @@ header a:hover {
     color: #0065fc;
 }
 
-.xfront {
+.place {
     margin-top: 5px;
 }
 
@@ -571,10 +571,10 @@ footer {
     .activ {
         width: 100%;
     }
-    .titrefront {
+    .title-infos {
         margin: 20px;
     }
-    .xfront {
+    .place {
         margin-left: 20px;
     }
     .xdoublefront {
