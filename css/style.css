@@ -610,12 +610,12 @@ footer {
     .card-activities {
         width: 95%;
     }
-    .footer-contenu {
+    .footer-container {
         flex-direction: column;
         gap: 15px;
         margin-left: 15px;
     }
-    .bloc-contenu {
+    .block-content {
         padding: 0;
     }
     .container {
