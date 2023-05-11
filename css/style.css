@@ -699,4 +699,7 @@ footer {
     .hebergements .card-rating {
         margin-left: 15px;
     }
+    .mini-infos {
+        margin-left: 10px;
+    }
 }
