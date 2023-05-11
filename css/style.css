@@ -388,7 +388,7 @@ span {
     font-size: 16px;
 }
 
-.carte {
+.card-activities {
     /* je mets un fond de couleur dans ma div carte qui va englobe l'image */
     background-color: white;
     /* je vais imposer une largeur ainsi qu'une hauteur */
