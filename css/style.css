@@ -175,6 +175,10 @@ input::placeholder {
     gap: 10px;
 }
 
+span {
+    font-weight: 700;
+}
+
 .filters-elements li {
     padding: 5px;
 }
