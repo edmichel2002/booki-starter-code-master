@@ -356,7 +356,7 @@ span {
 
 /* Hébergements à Marseille */
 
-.xconteneur {
+.xcontainer {
     /* je fais un display pour que mes elements soient alignés */
     display: flex;
     /* pur qu'il soit aligné dans mon conteneur */
