@@ -30,7 +30,7 @@ body {
 }
 
 
-/* ici est la partie de mon HEADER */
+/***** HEADER **********/
 
 header {
     display: flex;
