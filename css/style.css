@@ -375,7 +375,7 @@ span {
 
 /* ACTIVITES A MARSEILLE */
 
-.container {
+.conteneur {
     /* je mets mes elements aligné avec flex */
     display: flex;
     /* je dis a mes conteneur d'etre au centre */
@@ -383,7 +383,7 @@ span {
     margin: 20px;
 }
 
-.container .card-image h3 {
+.conteneur .carte h3 {
     margin-left: 20px;
     font-size: 16px;
 }
@@ -514,7 +514,7 @@ footer {
     .carte {
         height: 270px;
     }
-    .card-image {
+    .conteneur img {
         height: 200px;
     }
     .conteneur .carte h3 {
@@ -622,7 +622,7 @@ footer {
     .bloc-contenu {
         padding: 0;
     }
-    .container {
+    .conteneur {
         flex-direction: column;
         width: 100%;
         gap: 15px;
