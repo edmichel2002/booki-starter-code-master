@@ -596,7 +596,7 @@ footer {
     .research span {
         display: none;
     }
-    .xconteneur {
+    .xcontainer {
         flex-direction: column;
     }
     .card {
