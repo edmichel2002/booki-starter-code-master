@@ -157,7 +157,7 @@ input::placeholder {
     border-radius: 20px;
 }
 
-.filtres {
+.filters {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -477,7 +477,7 @@ footer {
     span {
         font-weight: 600;
     }
-    .filtres {
+    .filters {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -563,7 +563,7 @@ footer {
         margin: 20px 0;
         margin-bottom: 45px;
     }
-    .filtres {
+    .filters {
         flex-direction: column;
     }
     .hebergements {
