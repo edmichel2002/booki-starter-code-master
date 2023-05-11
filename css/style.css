@@ -77,7 +77,7 @@ header a:hover {
 }
 
 .place {
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 form {
@@ -375,7 +375,7 @@ span {
 
 /* ACTIVITES A MARSEILLE */
 
-.container {
+.conteneur {
     /* je mets mes elements aligné avec flex */
     display: flex;
     /* je dis a mes conteneur d'etre au centre */
@@ -388,7 +388,7 @@ span {
     font-size: 16px;
 }
 
-.card-activities {
+.carte {
     /* je mets un fond de couleur dans ma div carte qui va englobe l'image */
     background-color: white;
     /* je vais imposer une largeur ainsi qu'une hauteur */
@@ -399,7 +399,7 @@ span {
     box-shadow: 0px 0px 10px;
 }
 
-.card-image {
+.carte-image {
     height: 439px;
 }
 
