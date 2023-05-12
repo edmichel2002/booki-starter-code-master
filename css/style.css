@@ -577,6 +577,9 @@ p.card-subtitle {
         display: flex;
         flex-wrap: wrap;
     }
+    .infos {
+        margin-left: 23px;
+    }
     .formular {
         width: 100%;
         margin: 0 auto;
