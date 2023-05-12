@@ -32,6 +32,7 @@ body {
 .main-container {
     max-width: 1440px;
     width: 100%;
+    padding: 0 50px;
 }
 
 
@@ -671,7 +672,6 @@ p.card-subtitle {
     span {
         font-weight: 600;
         margin-left: 10px;
-        margin-top: 20px;
         align-self: baseline;
     }
     .fa-star {
