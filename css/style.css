@@ -301,9 +301,10 @@ span {
     padding: 10px 0 10px 10px;
 }
 
-.hebergements.card-title {
+
+/*.hebergements.card-title {
     margin-bottom: 6px;
-}
+}*/
 
 .hebergements.card-subtitle {
     margin-bottom: 6px;
@@ -400,50 +401,33 @@ span {
     margin: 20px;
 }
 
-.card-activities h3 {
-    margin-left: 20px;
-    font-size: 16px;
-}
-
 .card-activities {
-    /* je mets un fond de couleur dans ma div carte qui va englobe l'image */
     background-color: white;
-    /* je vais imposer une largeur ainsi qu'une hauteur */
-    width: 22%;
-    height: 439px;
-    /* je vais mettre de l'espace entre mes cartes */
+    width: 23%;
+    height: 370px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card-image {
-    height: 439px;
-}
-
 .container .card-image {
-    height: 88%;
     width: 100%;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
+    height: 300px;
 }
 
 
 /*  FOOTER */
 
 footer {
-    /* je mets un fond de couleur dans mon footer */
     background-color: #f2f2f2;
-    /* je veux qu'il prenne tout la largeur de ma page */
     width: 100%;
-    /* pas forcement besoin mais pour un reset du footer */
     flex-shrink: 0;
     flex-wrap: wrap;
     margin-top: 65px;
 }
 
 .footer-container {
-    /* max-width: 1440px;*/
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
@@ -470,6 +454,30 @@ footer {
     display: flex;
     font-weight: 600;
     gap: 10px;
+}
+
+.card-activities h3 {
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.section-title {
+    margin-left: 20px;
+}
+
+p.card-subtitle {
+    margin-bottom: 6px;
+    margin-left: 15px;
+}
+
+.hebergements h3.card-title {
+    margin-left: 15px;
+    margin-bottom: 6px;
+}
+
+.hebergements .card-rating {
+    margin-left: 15px;
 }
 
 
@@ -518,11 +526,12 @@ footer {
     }
     .card-activities {
         height: 270px;
+        ;
     }
-    .container.card-image {
+    .container .card-image {
         height: 200px;
     }
-    .container.card-imageh3 {
+    .container .card-image h3 {
         padding-top: 16px;
     }
     .hebergements-cards .card {
@@ -568,10 +577,14 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+    .formular {
+        width: 100%;
+        margin: 0 auto;
+    }
     form {
         display: grid;
-        grid-template-columns: 20% 50% 30%;
-        margin: 20px 0;
+        grid-template-columns: 15% 70% 15%;
+        margin: 20px 40px;
         margin-bottom: 45px;
     }
     .filters {
@@ -588,6 +601,8 @@ footer {
     }
     .title-infos {
         margin: 20px;
+        font-size: 22px;
+        line-height: 26px;
     }
     .place {
         margin-left: 20px;
@@ -608,6 +623,7 @@ footer {
     }
     .xcontainer {
         flex-direction: column;
+        align-content: center;
     }
     .card {
         display: grid;
@@ -618,9 +634,10 @@ footer {
     }
     .populaires-cards {
         flex-direction: column;
+        align-items: center;
     }
     .populaires-cards .card {
-        width: 100%;
+        width: 90%;
     }
     .card-activities {
         width: 95%;
@@ -668,7 +685,7 @@ footer {
         font-size: large;
     }
     .hebergements-cards .card {
-        width: 100%;
+        width: 90%;
         gap: 10px;
     }
     .info.fa-solid.fa-info {
@@ -701,5 +718,8 @@ footer {
     }
     .mini-infos {
         margin-left: 10px;
+    }
+    .research {
+        padding: 0;
     }
 }
