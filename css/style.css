@@ -24,10 +24,11 @@ html {
     margin: 0 auto;
 }
 
-body {
+
+/*body {
     display: flex;
     justify-content: center;
-}
+}*/
 
 .main-container {
     max-width: 1440px;
@@ -57,6 +58,9 @@ header img {
     padding-top: 30px;
 }
 
+
+/* Navbar */
+
 .navbar .nav-liens ul {
     display: flex;
 }
@@ -81,6 +85,9 @@ header a {
 header a:hover {
     color: #0065fc;
 }
+
+
+/* la barre de recherche */
 
 .place {
     margin-top: 8px;
@@ -129,15 +136,15 @@ form .fa-solid {
     color: black;
 }
 
-
-/* ensuite je m'attaque à la barre */
-
 .barsearch input {
     height: 100%;
     font-weight: 700;
     text-align: center;
     width: 100%;
 }
+
+
+/* loupe */
 
 .fa-magnifying-glass {
     display: none;
@@ -148,11 +155,9 @@ input::placeholder {
 }
 
 
-/* je m'attaque à la partie list ul li */
+/* partie list ul li */
 
 .elements {
-    /* un display pour mon conteneur  */
-    /*display: flex;*/
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -168,9 +173,6 @@ input::placeholder {
     align-items: center;
     gap: 10px;
 }
-
-
-/* ensuite une modification a l'interieur de mon conteneur de ma list ul li */
 
 .filters-elements {
     display: flex;
@@ -210,7 +212,7 @@ span {
 }
 
 
-/* je m'attaque petit au logo */
+/* petit au logo */
 
 .info {
     border-radius: 55%;
@@ -302,11 +304,6 @@ span {
     padding: 10px 0 10px 10px;
 }
 
-
-/*.hebergements.card-title {
-    margin-bottom: 6px;
-}*/
-
 .hebergements.card-subtitle {
     margin-bottom: 6px;
 }
@@ -378,13 +375,9 @@ span {
 /* Hébergements à Marseille */
 
 .xcontainer {
-    /* je fais un display pour que mes elements soient alignés */
     display: flex;
-    /* pur qu'il soit aligné dans mon conteneur */
     justify-content: space-between;
-    /* un wrap pour les mettres en colonnes lors du replit */
     flex-wrap: wrap;
-    /* pour etre bien centré */
     margin: 0 auto;
     gap: 10px;
     margin-top: 20px;
@@ -395,9 +388,7 @@ span {
 /* ACTIVITES A MARSEILLE */
 
 .container {
-    /* je mets mes elements aligné avec flex */
     display: flex;
-    /* je dis a mes conteneur d'etre au centre */
     justify-content: space-between;
     margin: 20px;
 }
