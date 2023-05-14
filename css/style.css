@@ -87,11 +87,14 @@ header a:hover {
 }
 
 
-/* la barre de recherche */
+/* infos */
 
 .place {
     margin-top: 8px;
 }
+
+
+/* la barre de recherche */
 
 form {
     display: grid;
@@ -155,7 +158,7 @@ input::placeholder {
 }
 
 
-/* partie list ul li */
+/* les filtres */
 
 .elements {
     margin-top: 20px;
