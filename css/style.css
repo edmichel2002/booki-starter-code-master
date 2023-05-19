@@ -61,20 +61,20 @@ header img {
 
 /* Navbar */
 
-.navbar .nav-liens ul {
+.navbar .nav-links ul {
     display: flex;
 }
 
-header .navbar .nav-liens ul li {
+header .navbar .nav-links ul li {
     margin: 0px 30px;
     padding-top: 10px;
 }
 
-header .navbar .nav-liens ul .heberg:hover {
+header .navbar .nav-links ul .heberg:hover {
     border-top: #0065fc solid 2px;
 }
 
-header .navbar .nav-liens ul .activ:hover {
+header .navbar .nav-links ul .activ:hover {
     border-top: #0065fc solid 2px;
 }
 
@@ -286,7 +286,7 @@ span {
 
 /****** Hebergements ***********/
 
-.hebergements {
+#hebergements {
     width: 62%;
 }
 
@@ -548,20 +548,20 @@ p.card-subtitle {
         text-align: center;
         width: 100%;
     }
-    header .navbar .nav-liens ul {
+    header .navbar .nav-links ul {
         justify-content: center;
         width: 100%;
         margin-bottom: 50px;
     }
-    header .navbar .nav-liens ul .heberg:hover {
+    header .navbar .nav-links ul .heberg:hover {
         border-bottom: 2px solid #0065fc;
         border-top: none;
     }
-    header .navbar .nav-liens ul .activ:hover {
+    header .navbar .nav-links ul .activ:hover {
         border-bottom: 2px solid #0065fc;
         border-top: none;
     }
-    header .navbar .nav-liens ul li {
+    header .navbar .nav-links ul li {
         margin: 0;
         width: 100%;
         height: 40px;
