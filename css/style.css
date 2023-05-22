@@ -24,6 +24,10 @@ html {
     margin: 0 auto;
 }
 
+a {
+    color: black;
+}
+
 .main-container {
     max-width: 1440px;
     width: 100%;
@@ -347,6 +351,11 @@ span {
     margin-top: 33px;
 }
 
+.populaires-cards a {
+    display: flex;
+    width: 100%;
+}
+
 .populaires-cards img {
     width: 33%;
     height: 136px;
@@ -429,8 +438,9 @@ footer {
     align-items: flex-start;
 }
 
-.footer-container h4 {
+.footer-container {
     padding-bottom: 10px;
+    gap: 20%;
 }
 
 .footer-container ul {
@@ -442,11 +452,15 @@ footer {
 }
 
 .block-content {
-    width: 100%;
+    /* width: 100%;*/
     padding: 30px;
 }
 
-.first-word {
+footer a {
+    color: black;
+}
+
+.first {
     display: flex;
     font-weight: 600;
     gap: 10px;
@@ -654,6 +668,7 @@ p.card-subtitle {
     }
     .block-content {
         padding: 0;
+        margin-left: 10px;
     }
     .container {
         flex-direction: column;
