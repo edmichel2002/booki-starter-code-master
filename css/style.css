@@ -24,12 +24,6 @@ html {
     margin: 0 auto;
 }
 
-
-/*body {
-    display: flex;
-    justify-content: center;
-}*/
-
 .main-container {
     max-width: 1440px;
     width: 100%;
@@ -303,12 +297,13 @@ span {
     width: 30%;
 }
 
-.hebergements.card-content {
+#hebergements.card-content {
     padding: 10px 0 10px 10px;
 }
 
-.hebergements.card-subtitle {
+#hebergements.card-subtitle {
     margin-bottom: 6px;
+    font-size: 14px;
 }
 
 .card img {
@@ -322,9 +317,13 @@ span {
     font-weight: 600;
 }
 
-.hebergements .card img {
+#hebergements .card img {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
+
+.card-rating {
+    margin-left: 15px;
 }
 
 
@@ -401,7 +400,7 @@ span {
 .card-activities {
     background-color: white;
     width: 23%;
-    height: 370px;
+    height: 450px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
@@ -410,7 +409,7 @@ span {
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    height: 300px;
+    height: 380px;
 }
 
 
@@ -454,10 +453,11 @@ footer {
     font-size: 17px;
 }
 
-.card-activities h3 {
+.card-activities p {
     padding-top: 15px;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .section-title {
@@ -469,12 +469,12 @@ p.card-subtitle {
     margin-left: 15px;
 }
 
-.hebergements h3.card-title {
+#hebergements h3.card-title {
     margin-left: 15px;
     margin-bottom: 6px;
 }
 
-.hebergements .card-rating {
+#hebergements .card-rating {
     margin-left: 15px;
 }
 
@@ -501,7 +501,7 @@ p.card-subtitle {
     .hebergements-and-populaires {
         flex-direction: column;
     }
-    .hebergements {
+    #hebergements {
         width: 100%;
     }
     .populaires {
@@ -594,7 +594,7 @@ p.card-subtitle {
     .hebergements-and-populaires section {
         background: transparent;
     }
-    .hebergements {
+    #hebergements {
         width: 100%;
     }
     .activ {
@@ -712,11 +712,11 @@ p.card-subtitle {
         margin-bottom: 6px;
         margin-left: 15px;
     }
-    .hebergements h3.card-title {
+    #hebergements h3.card-title {
         margin-left: 15px;
         margin-bottom: 6px;
     }
-    .hebergements .card-rating {
+    #hebergements .card-rating {
         margin-left: 15px;
     }
     .mini-infos {
